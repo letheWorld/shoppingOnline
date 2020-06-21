@@ -1,0 +1,338 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Sun May 17 23:07:49 2020] ***
+compiled with version: 9.3.0 on 17 May 2020 14:58:26
+os: Linux-5.4.0-29-generic #33-Ubuntu SMP Wed Apr 29 14:32:27 UTC 2020
+nodename: lethe
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/lethe/PycharmProjects/Django/Project/ShoppingOnline
+writing pidfile to uwsgi.pid
+detected binary path: /home/lethe/.virtualenvs/D_env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/lethe/PycharmProjects/Django/Project/ShoppingOnline
+your processes number limit is 31069
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:5555 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:43513 (port auto-assigned) fd 3
+Python version: 3.8.2 (default, Apr 27 2020, 15:53:34)  [GCC 9.3.0]
+Python main interpreter initialized at 0x55d8eb333020
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55d8eb333020 pid: 12986 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12986)
+spawned uWSGI worker 1 (pid: 12988, cores: 2)
+spawned uWSGI worker 2 (pid: 12989, cores: 2)
+spawned uWSGI worker 3 (pid: 12991, cores: 2)
+spawned uWSGI worker 4 (pid: 12993, cores: 2)
+spawned uWSGI http 1 (pid: 12994)
+[pid: 12991|app: 0|req: 1/1] 127.0.0.1 () {46 vars in 975 bytes} [Sun May 17 23:11:50 2020] GET /app/mine/ => generated 5984 bytes in 54 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 12991|app: 0|req: 2/2] 127.0.0.1 () {44 vars in 889 bytes} [Sun May 17 23:11:50 2020] GET /static/css/bootstrap.css => generated 98 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 12991|app: 0|req: 4/3] 127.0.0.1 () {44 vars in 918 bytes} [Sun May 17 23:11:50 2020] GET /static/ShoppingOnline/main/css/mine.css => generated 113 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 12991|app: 0|req: 4/4] 127.0.0.1 () {44 vars in 918 bytes} [Sun May 17 23:11:50 2020] GET /static/ShoppingOnline/main/css/main.css => generated 113 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 12993|app: 0|req: 1/5] 127.0.0.1 () {44 vars in 882 bytes} [Sun May 17 23:11:50 2020] GET /static/css/swiper.css => generated 95 bytes in 34 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 12991|app: 0|req: 5/6] 127.0.0.1 () {44 vars in 870 bytes} [Sun May 17 23:11:50 2020] GET /static/js/bootstrap.js => generated 96 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 12989|app: 0|req: 2/7] 127.0.0.1 () {44 vars in 864 bytes} [Sun May 17 23:11:50 2020] GET /static/js/jquery.js => generated 93 bytes in 44 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 12989|app: 0|req: 2/8] 127.0.0.1 () {44 vars in 880 bytes} [Sun May 17 23:11:50 2020] GET /static/css/reset.css => generated 94 bytes in 52 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 12993|app: 0|req: 2/9] 127.0.0.1 () {44 vars in 955 bytes} [Sun May 17 23:11:50 2020] GET /static/upload/icons/2020/05/12/icon_9PostoI.png => generated 121 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 12988|app: 0|req: 2/10] 127.0.0.1 () {44 vars in 860 bytes} [Sun May 17 23:11:50 2020] GET /static/js/base.js => generated 91 bytes in 44 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 12988|app: 0|req: 2/11] 127.0.0.1 () {44 vars in 900 bytes} [Sun May 17 23:11:50 2020] GET /static/ShoppingOnline/main/js/mine.js => generated 111 bytes in 40 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 12991|app: 0|req: 6/12] 127.0.0.1 () {44 vars in 871 bytes} [Sun May 17 23:11:50 2020] GET /static/js/bootstrap.js => generated 96 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 12993|app: 0|req: 3/13] 127.0.0.1 () {44 vars in 861 bytes} [Sun May 17 23:11:50 2020] GET /static/js/base.js => generated 91 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 12993|app: 0|req: 4/14] 127.0.0.1 () {44 vars in 901 bytes} [Sun May 17 23:11:50 2020] GET /static/ShoppingOnline/main/js/mine.js => generated 111 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 12993|app: 0|req: 5/15] 127.0.0.1 () {44 vars in 884 bytes} [Sun May 17 23:11:50 2020] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 12994)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Sun May 17 23:17:14 2020] ***
+compiled with version: 9.3.0 on 17 May 2020 14:58:26
+os: Linux-5.4.0-29-generic #33-Ubuntu SMP Wed Apr 29 14:32:27 UTC 2020
+nodename: lethe
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/lethe/PycharmProjects/Django/Project/ShoppingOnline
+writing pidfile to uwsgi.pid
+detected binary path: /home/lethe/.virtualenvs/D_env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/lethe/PycharmProjects/Django/Project/ShoppingOnline
+your processes number limit is 31069
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:5555 fd 3
+Python version: 3.8.2 (default, Apr 27 2020, 15:53:34)  [GCC 9.3.0]
+Python main interpreter initialized at 0x559580fccf30
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x559580fccf30 pid: 13080 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 13080)
+spawned uWSGI worker 1 (pid: 13082, cores: 2)
+spawned uWSGI worker 2 (pid: 13083, cores: 2)
+spawned uWSGI worker 3 (pid: 13085, cores: 2)
+spawned uWSGI worker 4 (pid: 13087, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+[pid: 13087|app: 0|req: 1/1] 127.0.0.1 () {50 vars in 1067 bytes} [Sun May 17 23:17:43 2020] GET /app/mine/ => generated 5984 bytes in 49 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 13087|app: 0|req: 2/2] 127.0.0.1 () {52 vars in 1116 bytes} [Sun May 17 23:17:45 2020] GET /app/cart/ => generated 13399 bytes in 78 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 13087|app: 0|req: 3/3] 127.0.0.1 () {52 vars in 1120 bytes} [Sun May 17 23:17:46 2020] GET /app/market/ => generated 0 bytes in 7 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 0)
+[pid: 13087|app: 0|req: 4/4] 127.0.0.1 () {52 vars in 1162 bytes} [Sun May 17 23:17:46 2020] GET /app/marketWithParams/104749/0/0/ => generated 10528 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 13083|app: 0|req: 1/5] 127.0.0.1 () {52 vars in 1139 bytes} [Sun May 17 23:17:48 2020] GET /app/home/ => generated 23082 bytes in 55 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 13087|app: 0|req: 5/6] 127.0.0.1 () {52 vars in 1120 bytes} [Sun May 17 23:17:49 2020] GET /app/market/ => generated 0 bytes in 0 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 0)
+[pid: 13087|app: 0|req: 6/7] 127.0.0.1 () {52 vars in 1162 bytes} [Sun May 17 23:17:49 2020] GET /app/marketWithParams/104749/0/0/ => generated 10528 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 13082|app: 0|req: 1/8] 127.0.0.1 () {52 vars in 1139 bytes} [Sun May 17 23:17:50 2020] GET /app/cart/ => generated 13399 bytes in 107 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 13085|app: 0|req: 1/9] 127.0.0.1 () {52 vars in 1116 bytes} [Sun May 17 23:17:51 2020] GET /app/mine/ => generated 5984 bytes in 109 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 13087|app: 0|req: 7/10] 127.0.0.1 () {52 vars in 1116 bytes} [Sun May 17 23:17:52 2020] GET /app/home/ => generated 23082 bytes in 81 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 13085|app: 0|req: 2/11] 192.168.3.15 () {40 vars in 697 bytes} [Sun May 17 23:20:00 2020] GET / => generated 74 bytes in 14 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 13085|app: 0|req: 3/12] 192.168.3.15 () {40 vars in 697 bytes} [Sun May 17 23:20:05 2020] GET / => generated 74 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 13085|app: 0|req: 4/13] 192.168.3.15 () {40 vars in 703 bytes} [Sun May 17 23:20:18 2020] GET /app => generated 77 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 13082|app: 0|req: 2/14] 192.168.3.15 () {40 vars in 713 bytes} [Sun May 17 23:20:36 2020] GET /app/main => generated 82 bytes in 14 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 13082|app: 0|req: 3/15] 192.168.3.15 () {40 vars in 713 bytes} [Sun May 17 23:21:03 2020] GET /app/home => generated 0 bytes in 2 msecs (HTTP/1.1 301) 3 headers in 115 bytes (1 switches on core 0)
+[pid: 13083|app: 0|req: 2/16] 192.168.3.15 () {40 vars in 715 bytes} [Sun May 17 23:21:03 2020] GET /app/home/ => generated 23082 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 13085|app: 0|req: 5/17] 192.168.3.15 () {40 vars in 715 bytes} [Sun May 17 23:22:52 2020] GET /app/home/ => generated 23082 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 13087|app: 0|req: 8/18] 192.168.3.15 () {42 vars in 764 bytes} [Sun May 17 23:22:57 2020] GET /app/market/ => generated 0 bytes in 2 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 0)
+[pid: 13085|app: 0|req: 6/19] 192.168.3.15 () {42 vars in 806 bytes} [Sun May 17 23:22:57 2020] GET /app/marketWithParams/104749/0/0/ => generated 10528 bytes in 53 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 13087|app: 0|req: 9/20] 192.168.3.15 () {42 vars in 783 bytes} [Sun May 17 23:23:00 2020] GET /app/cart/ => generated 0 bytes in 3 msecs (HTTP/1.1 302) 5 headers in 147 bytes (1 switches on core 1)
+[pid: 13087|app: 0|req: 10/21] 192.168.3.15 () {42 vars in 785 bytes} [Sun May 17 23:23:00 2020] GET /app/login/ => generated 1916 bytes in 24 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 13087|app: 0|req: 11/22] 192.168.3.15 () {42 vars in 804 bytes} [Sun May 17 23:23:16 2020] GET /app/home/ => generated 23082 bytes in 44 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 13085|app: 0|req: 7/23] 192.168.3.15 () {42 vars in 804 bytes} [Sun May 17 23:24:12 2020] GET /app/home/ => generated 23082 bytes in 42 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 13083|app: 0|req: 3/24] 192.168.3.15 () {42 vars in 804 bytes} [Sun May 17 23:24:13 2020] GET /app/home/ => generated 23082 bytes in 42 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 13085|app: 0|req: 8/25] 192.168.3.15 () {42 vars in 804 bytes} [Sun May 17 23:24:29 2020] GET /app/home/ => generated 23082 bytes in 50 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 13087|app: 0|req: 12/26] 192.168.3.15 () {44 vars in 853 bytes} [Sun May 17 23:24:42 2020] GET /app/market/ => generated 0 bytes in 3 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 0)
+[pid: 13083|app: 0|req: 4/27] 192.168.3.15 () {44 vars in 895 bytes} [Sun May 17 23:24:42 2020] GET /app/marketWithParams/104749/0/0/ => generated 10528 bytes in 75 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 13087|app: 0|req: 13/28] 192.168.3.15 () {44 vars in 872 bytes} [Sun May 17 23:24:43 2020] GET /app/cart/ => generated 0 bytes in 5 msecs (HTTP/1.1 302) 5 headers in 147 bytes (1 switches on core 1)
+[pid: 13087|app: 0|req: 14/29] 192.168.3.15 () {44 vars in 874 bytes} [Sun May 17 23:24:43 2020] GET /app/login/ => generated 1916 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+用户未激活
+[pid: 13087|app: 0|req: 15/30] 192.168.3.15 () {50 vars in 1003 bytes} [Sun May 17 23:24:52 2020] POST /app/login/ => generated 0 bytes in 106 msecs (HTTP/1.1 302) 6 headers in 278 bytes (1 switches on core 1)
+[pid: 13085|app: 0|req: 9/31] 192.168.3.15 () {46 vars in 930 bytes} [Sun May 17 23:24:52 2020] GET /app/login/ => generated 1928 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 409 bytes (1 switches on core 0)
+[pid: 13082|app: 0|req: 4/32] 192.168.3.15 () {50 vars in 1047 bytes} [Sun May 17 23:25:24 2020] POST /app/login/ => generated 0 bytes in 103 msecs (HTTP/1.1 302) 6 headers in 277 bytes (1 switches on core 1)
+[pid: 13087|app: 0|req: 16/33] 192.168.3.15 () {46 vars in 928 bytes} [Sun May 17 23:25:24 2020] GET /app/mine/ => generated 5984 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 13085|app: 0|req: 10/34] 192.168.3.15 () {44 vars in 915 bytes} [Sun May 17 23:25:30 2020] GET /app/orderlistnotpay/ => generated 2888 bytes in 54 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 13085|app: 0|req: 11/35] 192.168.3.15 () {44 vars in 923 bytes} [Sun May 17 23:25:33 2020] GET /app/orderlistnotreceive/ => generated 5867 bytes in 54 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 13082|app: 0|req: 5/36] 192.168.3.15 () {44 vars in 893 bytes} [Sun May 17 23:25:35 2020] GET /app/cart/ => generated 13399 bytes in 95 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 13085|app: 0|req: 12/37] 192.168.3.15 () {44 vars in 897 bytes} [Sun May 17 23:25:50 2020] GET /app/market/ => generated 0 bytes in 2 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 1)
+[pid: 13087|app: 0|req: 17/38] 192.168.3.15 () {44 vars in 939 bytes} [Sun May 17 23:25:50 2020] GET /app/marketWithParams/104749/0/0/ => generated 10528 bytes in 74 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 13082|app: 0|req: 6/39] 192.168.3.15 () {44 vars in 962 bytes} [Sun May 17 23:25:52 2020] GET /app/marketWithParams/104747/0/0/ => generated 17449 bytes in 71 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 13087|app: 0|req: 18/40] 192.168.3.15 () {44 vars in 962 bytes} [Sun May 17 23:25:53 2020] GET /app/marketWithParams/103532/0/0/ => generated 39030 bytes in 137 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 13087|app: 0|req: 19/41] 192.168.3.15 () {44 vars in 962 bytes} [Sun May 17 23:25:54 2020] GET /app/marketWithParams/103581/0/0/ => generated 25532 bytes in 57 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 13087|app: 0|req: 20/42] 192.168.3.15 () {44 vars in 962 bytes} [Sun May 17 23:25:55 2020] GET /app/marketWithParams/103536/0/0/ => generated 74671 bytes in 125 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 13087|app: 0|req: 21/43] 192.168.3.15 () {44 vars in 962 bytes} [Sun May 17 23:25:56 2020] GET /app/marketWithParams/103549/0/0/ => generated 285322 bytes in 234 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 1)
+[pid: 13087|app: 0|req: 22/44] 192.168.3.15 () {44 vars in 962 bytes} [Sun May 17 23:25:59 2020] GET /app/marketWithParams/103541/0/0/ => generated 419160 bytes in 439 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 13085|app: 0|req: 13/45] 192.168.3.15 () {44 vars in 962 bytes} [Sun May 17 23:26:05 2020] GET /app/marketWithParams/103557/0/0/ => generated 159531 bytes in 190 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 13085|app: 0|req: 14/46] 192.168.3.15 () {44 vars in 962 bytes} [Sun May 17 23:26:07 2020] GET /app/marketWithParams/103549/0/0/ => generated 285322 bytes in 367 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 1)
+[pid: 13085|app: 0|req: 15/47] 192.168.3.15 () {44 vars in 916 bytes} [Sun May 17 23:26:10 2020] GET /app/home/ => generated 23082 bytes in 63 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 13085|app: 0|req: 16/48] 192.168.3.15 () {44 vars in 897 bytes} [Sun May 17 23:26:21 2020] GET /app/market/ => generated 0 bytes in 3 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 1)
+[pid: 13085|app: 0|req: 17/49] 192.168.3.15 () {44 vars in 939 bytes} [Sun May 17 23:26:21 2020] GET /app/marketWithParams/104749/0/0/ => generated 10528 bytes in 55 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 13085|app: 0|req: 18/50] 192.168.3.15 () {44 vars in 916 bytes} [Sun May 17 23:26:22 2020] GET /app/cart/ => generated 13399 bytes in 72 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 13087|app: 0|req: 23/51] 192.168.3.15 () {44 vars in 893 bytes} [Sun May 17 23:26:22 2020] GET /app/mine/ => generated 5984 bytes in 49 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 13087|app: 0|req: 24/52] 192.168.3.15 () {44 vars in 893 bytes} [Sun May 17 23:26:23 2020] GET /app/cart/ => generated 13399 bytes in 98 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 13083|app: 0|req: 5/53] 192.168.3.15 () {44 vars in 913 bytes} [Sun May 17 23:26:33 2020] GET /app/subtocart/?goodsid=473 => generated 88 bytes in 51 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 13087|app: 0|req: 25/54] 192.168.3.15 () {44 vars in 913 bytes} [Sun May 17 23:26:33 2020] GET /app/subtocart/?goodsid=473 => generated 88 bytes in 50 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 13085|app: 0|req: 19/55] 192.168.3.15 () {44 vars in 913 bytes} [Sun May 17 23:26:34 2020] GET /app/subtocart/?goodsid=473 => generated 88 bytes in 38 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 13087|app: 0|req: 26/56] 192.168.3.15 () {44 vars in 893 bytes} [Sun May 17 23:26:44 2020] GET /app/mine/ => generated 5984 bytes in 50 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 13085|app: 0|req: 20/57] 192.168.3.15 () {44 vars in 897 bytes} [Sun May 17 23:26:47 2020] GET /app/logout/ => generated 0 bytes in 30 msecs (HTTP/1.1 302) 5 headers in 217 bytes (1 switches on core 1)
+[pid: 13087|app: 0|req: 27/58] 192.168.3.15 () {44 vars in 849 bytes} [Sun May 17 23:26:47 2020] GET /app/mine/ => generated 5914 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 13085|app: 0|req: 21/59] 192.168.3.15 () {44 vars in 851 bytes} [Sun May 17 23:26:49 2020] GET /app/login/ => generated 1916 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+密码错误
+[pid: 13083|app: 0|req: 6/60] 192.168.3.15 () {50 vars in 1003 bytes} [Sun May 17 23:26:53 2020] POST /app/login/ => generated 0 bytes in 99 msecs (HTTP/1.1 302) 6 headers in 278 bytes (1 switches on core 0)
+[pid: 13085|app: 0|req: 22/61] 192.168.3.15 () {46 vars in 930 bytes} [Sun May 17 23:26:53 2020] GET /app/login/ => generated 1930 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 409 bytes (1 switches on core 1)
+[pid: 13085|app: 0|req: 23/62] 192.168.3.15 () {50 vars in 1047 bytes} [Sun May 17 23:27:02 2020] POST /app/login/ => generated 0 bytes in 119 msecs (HTTP/1.1 302) 6 headers in 277 bytes (1 switches on core 0)
+[pid: 13087|app: 0|req: 28/63] 192.168.3.15 () {46 vars in 928 bytes} [Sun May 17 23:27:03 2020] GET /app/mine/ => generated 5984 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 13083|app: 0|req: 7/64] 192.168.3.15 () {44 vars in 893 bytes} [Sun May 17 23:27:09 2020] GET /app/cart/ => generated 13399 bytes in 85 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 13085|app: 0|req: 24/65] 192.168.3.15 () {44 vars in 897 bytes} [Sun May 17 23:27:10 2020] GET /app/market/ => generated 0 bytes in 3 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 1)
+[pid: 13087|app: 0|req: 29/66] 192.168.3.15 () {44 vars in 939 bytes} [Sun May 17 23:27:10 2020] GET /app/marketWithParams/104749/0/0/ => generated 10528 bytes in 93 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 13083|app: 0|req: 8/67] 192.168.3.15 () {44 vars in 916 bytes} [Sun May 17 23:27:11 2020] GET /app/home/ => generated 23082 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 18 10:21:46 2020] ***
+compiled with version: 9.3.0 on 17 May 2020 14:58:26
+os: Linux-5.4.0-29-generic #33-Ubuntu SMP Wed Apr 29 14:32:27 UTC 2020
+nodename: lethe
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/lethe/PycharmProjects/Django/Project/ShoppingOnline
+writing pidfile to uwsgi.pid
+detected binary path: /home/lethe/.virtualenvs/D_env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/lethe/PycharmProjects/Django/Project/ShoppingOnline
+your processes number limit is 31069
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:5555 fd 3
+Python version: 3.8.2 (default, Apr 27 2020, 15:53:34)  [GCC 9.3.0]
+Python main interpreter initialized at 0x55d380072d20
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55d380072d20 pid: 4669 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4669)
+spawned uWSGI worker 1 (pid: 4671, cores: 2)
+spawned uWSGI worker 2 (pid: 4672, cores: 2)
+spawned uWSGI worker 3 (pid: 4674, cores: 2)
+spawned uWSGI worker 4 (pid: 4676, cores: 2)
+[pid: 4674|app: 0|req: 1/1] 127.0.0.1 () {52 vars in 1066 bytes} [Mon May 18 10:24:41 2020] GET /app/home => generated 0 bytes in 11 msecs (HTTP/1.1 301) 3 headers in 115 bytes (1 switches on core 0)
+[pid: 4672|app: 0|req: 1/2] 127.0.0.1 () {52 vars in 1068 bytes} [Mon May 18 10:24:41 2020] GET /app/home/ => generated 23082 bytes in 163 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 4676|app: 0|req: 1/3] 127.0.0.1 () {52 vars in 1098 bytes} [Mon May 18 10:24:49 2020] GET /app/home/ => generated 23082 bytes in 77 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Mon May 18 21:41:06 2020] ***
+compiled with version: 9.3.0 on 17 May 2020 14:58:26
+os: Linux-5.4.0-29-generic #33-Ubuntu SMP Wed Apr 29 14:32:27 UTC 2020
+nodename: lethe
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/lethe/PycharmProjects/Django/Project/ShoppingOnline
+writing pidfile to uwsgi.pid
+detected binary path: /home/lethe/.virtualenvs/D_env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/lethe/PycharmProjects/Django/Project/ShoppingOnline
+your processes number limit is 31069
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:5555 fd 3
+Python version: 3.8.2 (default, Apr 27 2020, 15:53:34)  [GCC 9.3.0]
+Python main interpreter initialized at 0x5559830d4d20
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5559830d4d20 pid: 3577 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3577)
+spawned uWSGI worker 1 (pid: 3579, cores: 2)
+spawned uWSGI worker 2 (pid: 3580, cores: 2)
+spawned uWSGI worker 3 (pid: 3582, cores: 2)
+spawned uWSGI worker 4 (pid: 3584, cores: 2)
+[pid: 3582|app: 0|req: 1/1] 127.0.0.1 () {50 vars in 1013 bytes} [Mon May 18 21:41:24 2020] GET /app/home/ => generated 23082 bytes in 150 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 3584|app: 0|req: 1/2] 127.0.0.1 () {48 vars in 917 bytes} [Mon May 18 21:41:25 2020] GET /favicon.ico => generated 85 bytes in 21 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 3584|app: 0|req: 2/3] 127.0.0.1 () {52 vars in 1074 bytes} [Mon May 18 21:41:30 2020] GET /app/home/ => generated 23082 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 3582|app: 0|req: 2/4] 127.0.0.1 () {52 vars in 1096 bytes} [Mon May 18 21:41:32 2020] GET /app/market/ => generated 0 bytes in 7 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 1)
+[pid: 3580|app: 0|req: 1/5] 127.0.0.1 () {52 vars in 1138 bytes} [Mon May 18 21:41:32 2020] GET /app/marketWithParams/104749/0/0/ => generated 10528 bytes in 127 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 3584|app: 0|req: 3/6] 127.0.0.1 () {52 vars in 1115 bytes} [Mon May 18 21:41:33 2020] GET /app/cart/ => generated 13399 bytes in 100 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 3584|app: 0|req: 4/7] 127.0.0.1 () {52 vars in 1092 bytes} [Mon May 18 21:41:34 2020] GET /app/mine/ => generated 5984 bytes in 47 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3584|app: 0|req: 5/8] 127.0.0.1 () {52 vars in 1092 bytes} [Mon May 18 21:41:38 2020] GET /app/home/ => generated 23082 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 3584|app: 0|req: 6/9] 127.0.0.1 () {52 vars in 1096 bytes} [Mon May 18 21:41:39 2020] GET /app/market/ => generated 0 bytes in 7 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 1)
+[pid: 3582|app: 0|req: 3/10] 127.0.0.1 () {52 vars in 1138 bytes} [Mon May 18 21:41:39 2020] GET /app/marketWithParams/104749/0/0/ => generated 10528 bytes in 97 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 3582|app: 0|req: 4/11] 127.0.0.1 () {52 vars in 1115 bytes} [Mon May 18 21:41:40 2020] GET /app/cart/ => generated 13399 bytes in 37 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 3584|app: 0|req: 7/12] 127.0.0.1 () {52 vars in 1092 bytes} [Mon May 18 21:41:40 2020] GET /app/mine/ => generated 5984 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 3584|app: 0|req: 8/13] 127.0.0.1 () {54 vars in 1123 bytes} [Tue May 19 01:06:51 2020] GET /app/mine/ => generated 5984 bytes in 49 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3582|app: 0|req: 5/14] 127.0.0.1 () {54 vars in 1123 bytes} [Tue May 19 01:06:52 2020] GET /app/mine/ => generated 5984 bytes in 62 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 3584|app: 0|req: 9/15] 127.0.0.1 () {52 vars in 1092 bytes} [Tue May 19 01:06:53 2020] GET /app/cart/ => generated 13399 bytes in 40 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 3582|app: 0|req: 6/16] 127.0.0.1 () {52 vars in 1096 bytes} [Tue May 19 01:06:54 2020] GET /app/market/ => generated 0 bytes in 4 msecs (HTTP/1.1 302) 4 headers in 155 bytes (1 switches on core 1)
+[pid: 3582|app: 0|req: 7/17] 127.0.0.1 () {52 vars in 1138 bytes} [Tue May 19 01:06:54 2020] GET /app/marketWithParams/104749/0/0/ => generated 10528 bytes in 51 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 3584|app: 0|req: 10/18] 127.0.0.1 () {52 vars in 1115 bytes} [Tue May 19 01:06:55 2020] GET /app/home/ => generated 23082 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue May 19 08:45:04 2020] ***
+compiled with version: 9.3.0 on 17 May 2020 14:58:26
+os: Linux-5.4.0-29-generic #33-Ubuntu SMP Wed Apr 29 14:32:27 UTC 2020
+nodename: lethe
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/lethe/PycharmProjects/Django/Project/ShoppingOnline
+writing pidfile to uwsgi.pid
+detected binary path: /home/lethe/.virtualenvs/D_env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/lethe/PycharmProjects/Django/Project/ShoppingOnline
+your processes number limit is 31069
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:5555 fd 3
+Python version: 3.8.2 (default, Apr 27 2020, 15:53:34)  [GCC 9.3.0]
+Python main interpreter initialized at 0x559b98329d20
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x559b98329d20 pid: 4475 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4475)
+spawned uWSGI worker 1 (pid: 4477, cores: 2)
+spawned uWSGI worker 2 (pid: 4478, cores: 2)
+spawned uWSGI worker 3 (pid: 4480, cores: 2)
+spawned uWSGI worker 4 (pid: 4482, cores: 2)
+[pid: 4478|app: 0|req: 1/1] 127.0.0.1 () {50 vars in 1013 bytes} [Tue May 19 08:45:26 2020] GET /app/home/ => generated 23082 bytes in 146 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 4482|app: 0|req: 1/2] 127.0.0.1 () {48 vars in 917 bytes} [Tue May 19 08:45:27 2020] GET /favicon.ico => generated 85 bytes in 23 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4480|app: 0|req: 1/3] 127.0.0.1 () {52 vars in 1074 bytes} [Tue May 19 08:45:32 2020] GET /app/home/ => generated 23082 bytes in 106 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 4482|app: 0|req: 2/4] 127.0.0.1 () {50 vars in 1013 bytes} [Tue May 19 11:45:36 2020] GET /app/home/ => generated 23082 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 1)
+[pid: 4480|app: 0|req: 2/5] 127.0.0.1 () {48 vars in 917 bytes} [Tue May 19 11:45:36 2020] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4482|app: 0|req: 3/6] 127.0.0.1 () {52 vars in 1074 bytes} [Tue May 19 11:45:40 2020] GET /app/home/ => generated 23082 bytes in 49 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 4482|app: 0|req: 4/7] 127.0.0.1 () {52 vars in 1092 bytes} [Tue May 19 11:45:42 2020] GET /app/mine/ => generated 5984 bytes in 68 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 4482|app: 0|req: 5/8] 127.0.0.1 () {52 vars in 1096 bytes} [Tue May 19 11:45:45 2020] GET /app/logout/ => generated 0 bytes in 45 msecs (HTTP/1.1 302) 5 headers in 217 bytes (1 switches on core 0)
+[pid: 4480|app: 0|req: 3/9] 127.0.0.1 () {52 vars in 1048 bytes} [Tue May 19 11:45:45 2020] GET /app/mine/ => generated 5914 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 4480|app: 0|req: 4/10] 127.0.0.1 () {52 vars in 1054 bytes} [Tue May 19 11:45:47 2020] GET /app/register => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 119 bytes (1 switches on core 1)
+[pid: 4482|app: 0|req: 6/11] 127.0.0.1 () {52 vars in 1056 bytes} [Tue May 19 11:45:47 2020] GET /app/register/ => generated 2562 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 4478|app: 0|req: 2/12] 127.0.0.1 () {50 vars in 981 bytes} [Tue May 19 11:46:03 2020] GET /app/checkuser/?username=liu => generated 38 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4480|app: 0|req: 5/13] 127.0.0.1 () {60 vars in 1315 bytes} [Tue May 19 11:46:19 2020] POST /app/register/ => generated 27 bytes in 89 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 4477|app: 0|req: 1/14] 127.0.0.1 () {48 vars in 952 bytes} [Tue May 19 11:46:58 2020] GET /app/register/ => generated 2562 bytes in 35 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 4480|app: 0|req: 6/15] 127.0.0.1 () {54 vars in 1087 bytes} [Tue May 19 11:48:06 2020] GET /app/register/ => generated 2562 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 4478|app: 0|req: 3/16] 127.0.0.1 () {50 vars in 981 bytes} [Tue May 19 11:48:10 2020] GET /app/checkuser/?username=liu => generated 44 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 4482|app: 0|req: 7/17] 127.0.0.1 () {54 vars in 1087 bytes} [Tue May 19 11:49:27 2020] GET /app/register/ => generated 2562 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 4477|app: 0|req: 2/18] 127.0.0.1 () {50 vars in 981 bytes} [Tue May 19 11:49:30 2020] GET /app/checkuser/?username=liu => generated 38 bytes in 69 msecs (HTTP/1.1 200) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 4482|app: 0|req: 8/19] 127.0.0.1 () {60 vars in 1315 bytes} [Tue May 19 11:49:43 2020] POST /app/register/ => generated 27 bytes in 83 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+[pid: 4480|app: 0|req: 7/20] 127.0.0.1 () {48 vars in 952 bytes} [Tue May 19 11:49:49 2020] GET /app/register/ => generated 2562 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 4482|app: 0|req: 9/21] 127.0.0.1 () {60 vars in 1315 bytes} [Tue May 19 11:51:35 2020] POST /app/register/ => generated 27 bytes in 82 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 4480|app: 0|req: 8/22] 127.0.0.1 () {60 vars in 1315 bytes} [Tue May 19 11:52:59 2020] POST /app/register/ => generated 27 bytes in 67 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+[pid: 4478|app: 0|req: 4/23] 127.0.0.1 () {60 vars in 1315 bytes} [Tue May 19 11:52:59 2020] POST /app/register/ => generated 27 bytes in 173 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+[pid: 4482|app: 0|req: 10/24] 127.0.0.1 () {60 vars in 1315 bytes} [Tue May 19 11:53:08 2020] POST /app/register/ => generated 27 bytes in 70 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+[pid: 4478|app: 0|req: 5/25] 127.0.0.1 () {60 vars in 1315 bytes} [Tue May 19 11:53:29 2020] POST /app/register/ => generated 27 bytes in 70 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 4480|app: 0|req: 9/26] 127.0.0.1 () {60 vars in 1315 bytes} [Tue May 19 11:53:29 2020] POST /app/register/ => generated 27 bytes in 148 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 4482|app: 0|req: 11/27] 127.0.0.1 () {60 vars in 1315 bytes} [Tue May 19 11:53:30 2020] POST /app/register/ => generated 27 bytes in 80 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 4482|app: 0|req: 12/28] 127.0.0.1 () {60 vars in 1315 bytes} [Tue May 19 11:53:30 2020] POST /app/register/ => generated 27 bytes in 72 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+[pid: 4480|app: 0|req: 10/29] 127.0.0.1 () {60 vars in 1315 bytes} [Tue May 19 11:53:30 2020] POST /app/register/ => generated 27 bytes in 62 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+[pid: 4482|app: 0|req: 13/30] 127.0.0.1 () {60 vars in 1315 bytes} [Tue May 19 11:53:30 2020] POST /app/register/ => generated 27 bytes in 69 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 4482|app: 0|req: 14/31] 127.0.0.1 () {60 vars in 1315 bytes} [Tue May 19 11:53:55 2020] POST /app/register/ => generated 27 bytes in 63 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.

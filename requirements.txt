@@ -1,0 +1,16 @@
+app==0.0.1
+cffi==1.14.0
+cryptography==2.9.2
+Django==1.11.7
+django-debug-toolbar==2.2
+django-redis==4.11.0
+django-redis-cache==2.1.1
+django-tinymce==2.7.0
+Pillow==7.1.2
+pycparser==2.20
+PyMySQL==0.9.3
+pytz==2019.3
+redis==3.5.0
+six==1.14.0
+sqlparse==0.3.1
+uWSGI==2.0.18
