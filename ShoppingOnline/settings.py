@@ -83,8 +83,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'ShoppingOnline',
-        'USER': 'root',
-        'PASSWORD': '123456',
+        'USER': 'MySQL用户名',
+        'PASSWORD': 'MySQL密码',
         'HOST': 'localhost',
         'PORT': 3306,
     }
@@ -143,22 +143,15 @@ EMAIL_HOST = 'smtp.163.com'
 
 EMAIL_PORT = 25
 
-EMAIL_HOST_USER = 'letheworld@163.com'
+EMAIL_HOST_USER = '开启smtp服务后的163邮箱地址'
 
-EMAIL_HOST_PASSWORD = 'TKFNZFQHHSXAAYQU'
+EMAIL_HOST_PASSWORD = '服务密码'
 
 SERVER_HOST = '127.0.0.1'
 
-SERVER_PORT = '8000'
+SERVER_PORT = '5555'
 
 CACHES = {
-    # 'default': {
-    #     'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
-    #     'LOCATION': 'my_cache_table',
-    #     'TIMEOUT': 60 * 5,
-    #
-    # },
-
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
         'LOCATION': 'redis://127.0.0.1:6379/1',

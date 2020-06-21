@@ -64,13 +64,6 @@ def market_with_params(request, typeid, childcid, order_rule):
         goods_list = goods_list.order_by('-productnum')
 
     foodtype = foodtypes.get(typeid=typeid)
-    '''
-    全部分类:0#进口水果:103534#国产水果:103533
-    切割  #
-        ['全部分类：0''进口水果：103534''国产水果:103533']
-    切割  ：
-        [[全部分类, 0], [进口水果, 103534], [国产水果, 103533]]    
-    '''
     foodtypechildnames = foodtype.childtypenames
     foodtypechildname_list = foodtypechildnames.split('#')
     foodtype_childname_list = []
@@ -104,10 +97,6 @@ def cart(request):
     carts = Cart.objects.filter(c_user=request.user)
 
     is_all_select = not carts.filter(c_is_select=False).exists()
-
-    # total_price = get_total_price()
-    #
-    # total_price = float('%.5f' % total_price)
 
     data = {
         'title': '购物车',
